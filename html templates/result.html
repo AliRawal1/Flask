@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h1>Result</h1>
+    <form method="post">
+        Enter Percentage: <input type="text" name="percentage" required>
+        <input type="submit" value="Check Result">
+    </form>
+    {% if result %}
+        <p>Result: {{ result }}</p>
+    {% endif %}
+</body>
+</html>

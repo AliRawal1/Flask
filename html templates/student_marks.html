@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Marks</title>
+</head>
+<body>
+    <h1>Student Marks</h1>
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        {% for subject, marks in student.marks.items() %}
+        <tr>
+            <td>{{ subject }}</td>
+            <td>{{ marks }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
